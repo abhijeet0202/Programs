@@ -74,7 +74,7 @@ public class FindLoopInList {
 	}
 	 
 	 /*
-		 * Approach 1: USe Hash Set
+		 * Approach 2: USe Hash Set
 		 */
 	public boolean hasCycle(ListNode head) {
 
