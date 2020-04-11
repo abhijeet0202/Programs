@@ -16,28 +16,21 @@ package SingleArray;
 public class ProductOfArray {
 
 	int[] productPuzzle1(int a[], int N) {
-		int []products_below = new int[N];
+		int []products = new int[N];
 		int p=1;
 		
 		for(int i=0;i<N;++i) {
-		  products_below[i]=p;
+		  products[i]=p;
 		  p*=a[i];
-		  System.out.print(products_below[i]+",");
+		  System.out.print(products[i]+",");
 		}
 		System.out.println();
 		
-		int []products_above = new int[N];;
 		p=1;
 		for(int i=N-1;i>=0;--i) {
-		  products_above[i]=p;
+		  products[i]*=p;
 		  p*=a[i];
-		  System.out.print(products_above[i]+",");
-		}
-		System.out.println();
-		int []products = new int[N]; // This is the result
-		for(int i=0;i<N;++i) {
-		  products[i]=products_below[i]*products_above[i];
-		  System.out.print(products[i]+",");
+		  //System.out.print(products[i]+",");
 		}
 		return products;
 	}
