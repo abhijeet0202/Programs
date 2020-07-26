@@ -33,7 +33,7 @@ public class MaximumSubArray {
 			if (max_so_far < max_ending_here)
 				max_so_far = max_ending_here;
 
-			if (max_ending_here < 0)
+			if (max_ending_here < 0) //reseting -ve value to 0 because if we keep -ve after adding to new value it will be always leser so its of no use
 				max_ending_here = 0;
 		}
 		return max_so_far;
