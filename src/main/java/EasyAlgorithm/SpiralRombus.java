@@ -4,18 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class SpiralAttributes {
-	int height;
-	int length;
-	String data;
-
-	public SpiralAttributes(int height, int length, String data) {
-		this.height = height;
-		this.length = length;
-		this.data = data;
-	}
-}
-
 public class SpiralRombus {
 	static List<SpiralAttributes> spAttr = null;
 	private static Scanner scan;
