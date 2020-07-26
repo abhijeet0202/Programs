@@ -2,6 +2,8 @@ package Tree;
 
 import org.junit.Test;
 
+import gaylemcdowell.Trees.PreOrderToTree;
+
 public class TestPreOrderToTree {
 
 	@Test

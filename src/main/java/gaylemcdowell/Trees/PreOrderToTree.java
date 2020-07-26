@@ -1,18 +1,8 @@
-package Tree;
+package gaylemcdowell.Trees;
 
 /**
  * Definition for a binary tree node.
  */
-class TreeNode {
-	int val;
-	TreeNode left;
-	TreeNode right;
-
-	TreeNode(int x) {
-		val = x;
-	}
-}
-
 public class PreOrderToTree {
 
 	public TreeNode bstFromPreorder(int[] preorder) {
