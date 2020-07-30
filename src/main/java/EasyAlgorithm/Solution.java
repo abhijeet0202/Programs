@@ -13,6 +13,7 @@ class SpiralAttributes{
 		this.data = data;
 	}
 }
+
 public class Solution {
 	static List<SpiralAttributes> spAttr =null;
 	public static void main(String[] args) {
