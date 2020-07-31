@@ -62,12 +62,12 @@ public class CommonManager {
 		
 		for (CommonManager current : ceo.myRepotee()){
 			CommonManager res = closestCommonManager(current, employee1, employee2);
-			
 			if (res != null){
 				count++;
 				temp = res;
 			}
 		}
+		
 		if (count == 2){
 			return ceo;
 		}
