@@ -1,8 +1,6 @@
 package SingleArray;
 
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Given an array of integers and an integer k, you need to find the total
