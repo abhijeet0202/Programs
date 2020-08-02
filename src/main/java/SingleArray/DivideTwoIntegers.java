@@ -1,5 +1,7 @@
 package SingleArray;
 
+import java.util.Arrays;
+
 /**
  * Given two integers dividend and divisor, divide two integers without using multiplication, division and mod operator.
 
@@ -56,7 +58,6 @@ public class DivideTwoIntegers {
 	public static void main(String[] args) {
 		DivideTwoIntegers twoIntegers = new DivideTwoIntegers();
 		System.out.println(twoIntegers.divide(57, 3));
-
 	}
 
 }

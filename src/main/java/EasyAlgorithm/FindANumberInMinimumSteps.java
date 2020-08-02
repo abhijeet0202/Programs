@@ -90,7 +90,7 @@ public class FindANumberInMinimumSteps {
 				break;
 			}
 			if (temp.number == number) {
-				System.out.println("Found the Number, Minimum Length to approch this number is :" + (temp.level - 1));
+				System.out.println("Found the Number, Minimum Length to approch this number is :" + (temp.level-1));
 				break;
 			}
 			myqueue.add(new NumberContainer(temp.number - temp.level, temp.level + 1));
@@ -106,10 +106,10 @@ public class FindANumberInMinimumSteps {
 
 	public static void main(String[] args) {
 		FindANumberInMinimumSteps aNumberInMinimumSteps = new FindANumberInMinimumSteps();
-		aNumberInMinimumSteps.logicToFindLevel(5);
+		aNumberInMinimumSteps.logicToFindLevel(3);
 
 		// 2nd Login :Airthmetic summation Logic
-		/**
+		/*
 		 * Step 0: Get positive target value (step to get negative target is the same as
 		 * to get positive value due to symmetry). 
 		 * 

@@ -29,6 +29,7 @@ public class HappyNumber {
 		HashSet<Integer> unique = new HashSet<Integer>();
 
 		while (unique.add(n)) {
+			System.out.println(n);
 			int value = 0;
 			while (n > 0) {
 				value += Math.pow(n % 10, 2);
@@ -38,6 +39,7 @@ public class HappyNumber {
 			if (n == 1)
 				return true;
 		}
+		System.out.println("Last:"+n);
 		return false;
 	}
 }

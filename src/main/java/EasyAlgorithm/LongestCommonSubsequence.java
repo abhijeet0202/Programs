@@ -1,7 +1,5 @@
 package EasyAlgorithm;
 
-import java.util.Arrays;
-
 /**
  * Given two strings text1 and text2, return the length of their longest common
  * subsequence.
@@ -60,5 +58,29 @@ public class LongestCommonSubsequence {
 	      } 
 	    } 
 	  return L[text1Length][text2Length]; 
+	}
+	
+	
+	public int longestCommonSubsequenceSingleIndex(String text1, String text2) {
+		int text1Length = text1.length();
+		int text2Length = text2.length();
+		int L[] = new int[text1Length+1];
+		//Arrays.fill(L, 1);
+		for (int i=1; i<=text2Length; i++) 
+	    { 
+			int prev =0;
+	      for (int j=1; j<=text1Length; j++) 
+	      {
+	    	  int tmp = L[j];
+	        if (text1.charAt(j-1) == text2.charAt(i-1))
+	            L[j]= prev + 1; 
+	        else
+	            L[j] = Math.max(L[j], L[j-1]);
+	        
+	        prev=tmp;
+	      } 
+	      
+	    } 
+	  return L[text1Length]; 
 	}
 }

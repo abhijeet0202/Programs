@@ -13,7 +13,7 @@ public class TestHappyNumber {
 	@Test
 	public void testIsHappyTrue() {
 		HappyNumber happyNumber = new HappyNumber();
-		Assert.assertTrue(happyNumber.isHappy(19));
+		Assert.assertTrue(happyNumber.isHappy(83));
 	}
 
 }
