@@ -46,23 +46,27 @@ public class FindIfArrayCanBeDividedIntoTwoSubarraysOfEqualSum {
 
 		for (int i = 0; i < number; i++) {
 			if (2 * sum_so_far + array[i] == sum) {
-				System.out.println("Answer");
-				printSubArray(array, 0, i - 1);
-				printSubArray(array, i + 1, number - 1);
+				//System.out.println("Answer");
+				//printSubArray(array, 0, i - 1);
+				//printSubArray(array, i + 1, number - 1);
 				return true;
 			}
 			sum_so_far += array[i];
-			System.out.println(sum + ":::" + array[i] + "::::" + sum_so_far);
+			//System.out.println(sum + ":::" + array[i] + "::::" + sum_so_far);
 		}
-		System.out.println("The array cannot be divided into two subarrays with equal sum");
+		//System.out.println("The array cannot be divided into two subarrays with equal sum");
 		return false;
 	}
 
+	
 	public static void main(String[] args) {
 		FindIfArrayCanBeDividedIntoTwoSubarraysOfEqualSum find = new FindIfArrayCanBeDividedIntoTwoSubarraysOfEqualSum();
 		int arr[] = { 6, -2, -3, 2, 3 };
 		int total = 5;
 		find.divideArray(arr, total);
+		
+	
+		
 	}
 
 }

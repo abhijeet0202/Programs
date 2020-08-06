@@ -24,6 +24,8 @@ public class ValidTiangle {
 
 	public static void main(String[] args) {
 		
+		System.out.println(1<<4);
+		
 		int a[] = {7,10,7};
 		int b[] = {2,3,4};
 		int c[] = {2,7,4};

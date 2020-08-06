@@ -46,7 +46,7 @@ public class DivideTwoIntegers {
            for (int i =0; a >=c ;i++){
                 a=a-c;
                 result = result + (1 << i);
-                c <<= 1 ;
+                c = c<< 1 ;
             }
         }
         if(isNegative)return -result;

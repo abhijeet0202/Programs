@@ -18,7 +18,7 @@ public class Partition {
 		
 		Node current = head;
 		
-		while(current.next != null){
+		while(current != null){
 			Node temp = current.next;
 			current.next = null;
 			if (current.data < partition){

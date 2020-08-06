@@ -46,4 +46,25 @@ public class kthToLast {
 		System.out.println("The kth: "+k +" from last index is:"+ kth.data);
 		return kth.data;
 	}
+	
+	/*******************************************/
+	public static class Index {
+		public int value = 0;
+	}	
+	public Node kthToLastInterative(int k, Node head) {
+		Index idx = new Index();
+		return kthToLastInterative(head, k, idx);
+	}
+	
+	public Node kthToLastInterative(Node head, int k, Index idx) {
+		if (head == null) {
+			return null;
+		}
+		Node node = kthToLastInterative(head.next, k, idx);
+		idx.value = idx.value + 1;
+		if (idx.value == k) {
+			return head;
+		} 
+		return node;
+	}		
 }

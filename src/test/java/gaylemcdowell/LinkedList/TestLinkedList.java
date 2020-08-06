@@ -107,6 +107,13 @@ public class TestLinkedList {
 	}
 	
 	@Test
+	public void kthToLastInterative() {
+		kthToLast kth = new kthToLast();
+		kth.kthToLastInterative(3, linkedList.head);
+		//kth.kthToLastInterative(18, linkedList.head);
+	}
+	
+	@Test
 	public void palindrom() {
 		Palindrome palObj = new Palindrome();
 		LinkedList head1 = new LinkedList();

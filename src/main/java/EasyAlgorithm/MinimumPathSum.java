@@ -34,25 +34,27 @@ public class MinimumPathSum {
 		return grid[height][width] + Math.min(minCost(grid, height+1, width), minCost(grid, height, width+1));
 	}
 	
+	
+	
 	public int minPathSum1(int[][] grid) {
-		if(grid == null || grid.length == 0 || grid[0].length == 0) {
-            return 0;
-        }
-        
-        int m = grid.length;
-        int n = grid[0].length;
-        int[] dp = new int[n + 1];
-        
-        for(int j = 1; j <= n; j++) {
-            dp[j] = dp[j - 1] + grid[0][j - 1];
-        }
-        
-        dp[0] = Integer.MAX_VALUE; 
-        for(int i = 1; i < m; i++) {
-            for(int j = 1; j <= n; j++) {
-                dp[j] = Math.min(dp[j - 1], dp[j]) + grid[i][j - 1];
-            }
-        }
-        return dp[n];
+		if (grid == null || grid.length == 0 || grid[0].length == 0) {
+			return 0;
+		}
+
+		int m = grid.length;
+		int n = grid[0].length;
+		int[] dp = new int[n + 1];
+
+		for (int j = 1; j <= n; j++) {
+			dp[j] = dp[j - 1] + grid[0][j - 1];
+		}
+
+		dp[0] = Integer.MAX_VALUE;
+		for (int i = 1; i < m; i++) {
+			for (int j = 1; j <= n; j++) {
+				dp[j] = Math.min(dp[j - 1], dp[j]) + grid[i][j - 1];
+			}
+		}
+		return dp[n];
 	}
 }
