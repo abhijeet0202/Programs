@@ -162,4 +162,17 @@ public class TestLinkedList {
 		
 		palObj.intersectionJunctionUsingSet(head1.head,head2.head);
 	}
+	
+	@Test
+	public void testReOrderList() {
+		ReorderList palObj = new ReorderList();
+		LinkedList head1 = new LinkedList();
+		head1.insertFirst(5);
+		head1.insertFirst(4);
+		head1.insertFirst(3);
+		head1.insertFirst(2);
+		head1.insertFirst(1);
+		
+		palObj.reOrderList(head1.head);
+	}
 }

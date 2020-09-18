@@ -22,8 +22,10 @@ public class Solution {
 		int testCases = 0;
 		try {
 			testCases = scan.nextInt();
-			if (testCases > 1000 || testCases < 1)
+			if (testCases > 1000 || testCases < 1) {
+				scan.close();
 				throw new NumberFormatException();
+			}
 			spAttr = new ArrayList<SpiralAttributes>();
 		} catch (NumberFormatException ex) {
 			System.out.println("Not a Valid Test Numbers" + ex);
@@ -35,12 +37,13 @@ public class Solution {
 			String data = scan.next();
 			SpiralAttributes sp = new SpiralAttributes(height,length,data);
 			spAttr.add(sp);
-			
+			 
 		}
 		System.out.println(spAttr);
 		for(SpiralAttributes sp: spAttr) {
 //			display(sp);
 		}
+		scan.close();
 	}
 
 	static void display(SpiralAttributes spiral) { 

@@ -1,6 +1,8 @@
 package SingleArray;
 
 import java.util.Arrays;
+import java.util.NavigableMap;
+import java.util.TreeMap;
 
 /**
  * Given a collection of intervals, find the minimum number of intervals you
@@ -68,7 +70,7 @@ public class NonOverlappingIntervals {
 		
 		int[][] myArr3 = new int[][] {{1,100},{11,22},{1,11},{2,12}};
 		System.out.println(intervals.eraseOverlapIntervals(myArr3));
-
+		
 	}
 
 }
