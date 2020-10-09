@@ -61,6 +61,7 @@ public class CombinationSumIII {
 		// TODO Auto-generated method stub
 		CombinationSumIII sumIII = new CombinationSumIII();
 		List<List<Integer>> myResult = sumIII.combinationSum3(3, 9);
+		System.out.println(myResult);
 	}
 
 }

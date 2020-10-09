@@ -3,8 +3,6 @@ package EasyAlgorithm;
 import org.junit.Assert;
 import org.junit.Test;
 
-import EasyAlgorithm.ValidParenthesisString;
-
 public class TestValidParenthesisString {
 
 	@Test

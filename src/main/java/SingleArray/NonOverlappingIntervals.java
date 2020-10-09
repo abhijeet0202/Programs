@@ -1,8 +1,6 @@
 package SingleArray;
 
 import java.util.Arrays;
-import java.util.NavigableMap;
-import java.util.TreeMap;
 
 /**
  * Given a collection of intervals, find the minimum number of intervals you

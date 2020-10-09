@@ -1,7 +1,5 @@
 package EasyAlgorithm;
 
-import java.util.Arrays;
-
 /**
  * We distribute some number of candies, to a row of n = num_people people in
  * the following way:

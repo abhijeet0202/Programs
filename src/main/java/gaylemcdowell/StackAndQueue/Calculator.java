@@ -1,9 +1,5 @@
 package gaylemcdowell.StackAndQueue;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /*
  * Calculator: Given an arithmetic equation consisting of positive integers, +, -, * and / (no parentheses),compute the result.
  * EXAMPLE
