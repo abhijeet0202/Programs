@@ -26,8 +26,21 @@ public class DivideArrayIn2Parts {
 			}
 		}
 
+	public int dicide(int a, int b) {
+		int c =-1;
+		try {
+			c = a/b;
+		}catch(Exception e) {
+			System.err.print("Exc");
+		}finally {
+			System.err.println("Finall");
+		}
+		
+		return c;
+	}
 	public static void main(String[] args) {
 		
+	
 		/*
 		 * Think of below array examples are weather (i.e. temperature ) for any country
 		 * Which always start as Winter season and end up in Summer season.{5,-3,6,8};
@@ -48,8 +61,9 @@ public class DivideArrayIn2Parts {
 				//int a[] = {-5, -5, -5, -42, 6, 12};
 				
 				DivideArrayIn2Parts obj = new DivideArrayIn2Parts();
-				int breaki = obj.find(a,a.length);
-				System.out.println(breaki);
+				//int breaki = obj.find(a,a.length);
+				//System.out.println(breaki);
+				obj.dicide(4, 0);
 
 	}
 
