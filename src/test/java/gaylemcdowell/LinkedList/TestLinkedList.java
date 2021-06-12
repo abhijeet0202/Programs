@@ -175,4 +175,13 @@ public class TestLinkedList {
 		
 		palObj.reOrderList(head1.head);
 	}
+	
+	
+	@Test
+	public void testRemoveDupsInOnComplexity() {
+		RemoveDuplicateONcomplexity rd = new RemoveDuplicateONcomplexity();
+		linkedList.display();
+		rd.removeDups(linkedList.head);
+		linkedList.display();
+	}
 }

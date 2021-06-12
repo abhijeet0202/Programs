@@ -40,5 +40,12 @@ public class TestBestTimetoBuyandSellStock {
 		BestTimetoBuyandSellStock stockII = new BestTimetoBuyandSellStock();
 		Assert.assertEquals(0,stockII.maxProfit_II(arr));
 	}
+	
+	@Test
+	public void testMaxProfit_III_A() {
+		int[] arr = new int[] {7,1,5,3,6,4};
+		BestTimetoBuyandSellStock stockIII = new BestTimetoBuyandSellStock();
+		Assert.assertEquals(7,stockIII.maxProfitIII_A(arr));
+	}
 
 }

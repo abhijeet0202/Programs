@@ -43,8 +43,8 @@ public class DivideArrayIn2Parts {
 		 * {7,-3,-3,-6} {8,9}
 		 * Return 4
 		 */
-				//int[] a = {5,-3,6,8};
-				int[]a = {-3,-3,-6,8,9};
+				int[] a = {5,-3,6,8};
+				//int[]a = {-3,-3,-6,8,9};
 				//int a[] = {-5, -5, -5, -42, 6, 12};
 				
 				DivideArrayIn2Parts obj = new DivideArrayIn2Parts();

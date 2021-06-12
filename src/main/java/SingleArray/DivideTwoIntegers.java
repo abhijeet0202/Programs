@@ -55,7 +55,7 @@ public class DivideTwoIntegers {
     }
 	public static void main(String[] args) {
 		DivideTwoIntegers twoIntegers = new DivideTwoIntegers();
-		System.out.println(twoIntegers.divide(57, 3));
+		System.out.println(twoIntegers.divide(10, 3));
 	}
 
 }

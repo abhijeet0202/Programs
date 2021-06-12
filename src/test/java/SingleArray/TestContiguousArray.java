@@ -22,11 +22,11 @@ public class TestContiguousArray {
 	}
 	
 	@Test
-	public void testFindMaxLength2() {
+	public void findMaxLengthBest() {
 		ContiguousArray contiguousArray = new ContiguousArray();
 		//int[] arr = new int[] {0,0,0,1,1,1,0};
 		int[] arr = new int[] {1,1,0,1,0,0};
-		Assert.assertEquals(6, contiguousArray.findMaxLength(arr));
+		Assert.assertEquals(6, contiguousArray.findMaxLengthBest(arr));
 	}
 	
 	@Test
