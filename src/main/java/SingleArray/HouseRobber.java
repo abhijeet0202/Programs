@@ -48,6 +48,7 @@ public class HouseRobber {
 		HouseRobber robber = new HouseRobber();
 		int[] nums = new int[] { 2,1,1,2 };
 		System.out.println(robber.rob(nums));
+		
 	}
 
 }
